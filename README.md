@@ -1,7 +1,4 @@
-from weasyprint import HTML
-
-# Content for the README.md file
-readme_content = """# 💱 Currency Converter API
+# 💱 Currency Converter Web API
 
 A professional, high-performance .NET 8 Web API built with a clean architecture. This service provides real-time currency conversion by integrating with external exchange rate providers while ensuring reliability and speed through advanced caching and error-handling strategies.
 
@@ -36,7 +33,7 @@ A professional, high-performance .NET 8 Web API built with a clean architecture.
 
 1.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/Alexandr0w/CurrencyConverter.git](https://github.com/Alexandr0w/CurrencyConverter.git)
+    git clone https://github.com/Alexandr0w/CurrencyConverter.git
     ```
 2.  **Navigate to the project folder**:
     ```bash
