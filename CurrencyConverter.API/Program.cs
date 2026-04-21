@@ -1,9 +1,13 @@
+using CurrencyConverter.API.Middleware;
 using CurrencyConverter.Services;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient<CurrencyService>();
 builder.Services.AddMemoryCache();
+
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 builder.Services.AddControllers();
 
@@ -21,6 +25,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseExceptionHandler(); 
 
 app.MapControllers();
 
