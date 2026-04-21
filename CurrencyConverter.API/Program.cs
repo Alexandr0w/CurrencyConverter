@@ -3,6 +3,7 @@ using CurrencyConverter.Services;
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient<CurrencyService>();
+builder.Services.AddMemoryCache();
 
 builder.Services.AddControllers();
 
